@@ -1,0 +1,10 @@
+version: '3'
+services:
+  sarandy:
+    #image: it for name your image after docker build -t nameyourimages .
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 3282:3000
